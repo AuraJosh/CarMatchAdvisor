@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMA AutoAdvisor | Expert Car Matching</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define the deep primary hue (Navy Blue) */
+        .primary-navy {
+            background-color: #0A1933; /* Deep, authoritative Navy Blue */
+        }
+        .text-navy {
+            color: #0A1933;
+        }
+        /* Typographical appearance - Formal Display Type (Serif) */
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Typographical appearance - Functional Body Type (Sans-Serif) */
+        .font-functional {
+            font-family: 'Inter', sans-serif;
+        }
+        .step-marker {
+            width: 4rem; /* Large disc size */
+            height: 4rem;
+        }
+        /* Custom scrollbar to match the navy theme */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #0A1933;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-functional bg-white text-navy min-h-screen antialiased">
+
+    <!-- Header & Navigation (Minimalist - Navy Text on White) -->
+    <header class="sticky top-0 z-10 bg-white shadow-md border-b border-gray-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Formal Display Type -->
+            <div class="text-3xl font-bold font-display text-navy tracking-tight">CMA AutoAdvisor</div>
+            <!-- Navigation Links (Functional Body Type) -->
+            <nav class="space-x-8 hidden sm:flex text-sm font-medium">
+                <a href="#how-it-works" class="hover:text-blue-700 transition duration-300">Process</a>
+                <a href="#pricing" class="hover:text-blue-700 transition duration-300">Tiers</a>
+                <a href="#" class="primary-navy text-white px-4 py-2 rounded-lg hover:opacity-90 transition duration-300 shadow-md">Start Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Symmetrical/Central Alignment) -->
+    <main class="max-w-7xl mx-auto">
+        <section class="text-center py-20 md:py-32 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-6xl md:text-8xl font-display font-bold text-navy mb-6 leading-tight">
+                Find Your Perfect Match.
+            </h1>
+            <p class="text-xl md:text-2xl text-navy max-w-4xl mx-auto mb-10 font-light tracking-wide">
+                Expert, unbiased car recommendations tailored precisely to your budget, needs, and lifestyle. Stop researching, start driving.
+            </p>
+            <a href="#how-it-works" class="primary-navy text-white px-8 py-4 text-lg rounded-xl font-semibold shadow-2xl shadow-[#0A1933]/50 transition duration-300 transform hover:scale-[1.02]">
+                Begin Your Consultation
+            </a>
+        </section>
+
+        <!-- 2. How It Works Section (Step Markers - Vertical Alignment/Navy Discs) -->
+        <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50/50 border-t border-b border-navy/10">
+            <h2 class="text-5xl font-display font-bold text-center text-navy mb-16">The Formal Process</h2>
+
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Vertical Navy Blue Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 primary-navy"></div>
+                
+                <div class="space-y-16">
+                    
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center relative">
+                        <!-- Step Marker -->
+                        <div class="relative z-10 mx-auto md:mx-0 primary-navy rounded-full step-marker flex items-center justify-center flex-shrink-0">
+                            <span class="text-white text-3xl font-display font-bold">1</span>
+                        </div>
+                        <!-- Content Block -->
+                        <div class="md:flex-1 md:ml-12 mt-4 md:mt-0 p-6 rounded-xl border border-navy/20 shadow-lg bg-white/70">
+                            <h3 class="text-2xl font-display font-bold text-navy mb-2">Tell Us About You</h3>
+                            <p class="text-gray-700 font-light">Fill in our quick questionnaire covering your needs, budget, family size, and lifestyle preferences. This is the foundation of our research.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row-reverse items-start md:items-center relative">
+                        <!-- Step Marker -->
+                        <div class="relative z-10 mx-auto md:mx-0 primary-navy rounded-full step-marker flex items-center justify-center flex-shrink-0">
+                            <span class="text-white text-3xl font-display font-bold">2</span>
+                        </div>
+                        <!-- Content Block -->
+                        <div class="md:flex-1 md:mr-12 mt-4 md:mt-0 p-6 rounded-xl border border-navy/20 shadow-lg bg-white/70">
+                            <h3 class="text-2xl font-display font-bold text-navy mb-2">We Do The Research</h3>
+                            <p class="text-gray-700 font-light">Our experts analyze your input, utilizing external data sources (Autotrader, Euro NCAP, Reliability Index) to create a scoring matrix and tailored longlist.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center relative">
+                        <!-- Step Marker -->
+                        <div class="relative z-10 mx-auto md:mx-0 primary-navy rounded-full step-marker flex items-center justify-center flex-shrink-0">
+                            <span class="text-white text-3xl font-display font-bold">3</span>
+                        </div>
+                        <!-- Content Block -->
+                        <div class="md:flex-1 md:ml-12 mt-4 md:mt-0 p-6 rounded-xl border border-navy/20 shadow-lg bg-white/70">
+                            <h3 class="text-2xl font-display font-bold text-navy mb-2">Get Your Results</h3>
+                            <p class="text-gray-700 font-light">Receive your personalized shortlist (3 or 5 cars) with clear pros, cons, price range, and ownership considerations (MPG, tax, insurance group).</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row-reverse items-start md:items-center relative">
+                        <!-- Step Marker -->
+                        <div class="relative z-10 mx-auto md:mx-0 primary-navy rounded-full step-marker flex items-center justify-center flex-shrink-0">
+                            <span class="text-white text-3xl font-display font-bold">4</span>
+                        </div>
+                        <!-- Content Block -->
+                        <div class="md:flex-1 md:mr-12 mt-4 md:mt-0 p-6 rounded-xl border border-navy/20 shadow-lg bg-white/70">
+                            <h3 class="text-2xl font-display font-bold text-navy mb-2">Make Your Choice with Confidence</h3>
+                            <p class="text-gray-700 font-light">Use our clear, accessible advice to buy your next vehicle with total peace of mind, knowing it’s the right fit for your needs.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Pricing Section (Framing - Symmetrical Vertical Outlines) -->
+        <section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-display font-bold text-center text-navy mb-16">Structured Tiers</h2>
+
+            <div class="flex flex-col lg:flex-row justify-center gap-8 max-w-5xl mx-auto">
+
+                <!-- Pricing Card: Standard -->
+                <div class="flex-1 max-w-md w-full mx-auto p-8 rounded-xl shadow-2xl border-2 border-navy/50 relative overflow-hidden bg-white hover:shadow-3xl transition duration-500">
+                    <!-- Symmetrical Vertical Outline (Navy Blue) -->
+                    <div class="absolute top-0 bottom-0 left-0 w-1 primary-navy"></div>
+                    <div class="absolute top-0 bottom-0 right-0 w-1 primary-navy"></div>
+
+                    <div class="text-center pb-8 border-b border-navy/20 mb-6">
+                        <h3 class="text-4xl font-display font-bold text-navy mb-2">Standard</h3>
+                        <p class="text-5xl font-display font-bold primary-navy text-white inline-block px-4 py-2 rounded-lg">£19.99</p>
+                    </div>
+
+                    <p class="text-center text-gray-600 mb-6 font-semibold font-functional">
+                        Receive your tailored 3-car shortlist within <span class="text-navy font-bold">2–3 working days</span>.
+                    </p>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">Complete online questionnaire.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">Tailored shortlist of <span class="font-bold">3 recommended car models</span>.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">Clear breakdown of pros & cons and running costs overview.</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mt-8 block primary-navy text-white text-center py-3 rounded-lg font-semibold border-2 border-transparent transition duration-300 hover:bg-white hover:text-navy hover:border-navy">
+                        Select Standard
+                    </a>
+                    <p class="text-xs text-center text-gray-500 mt-4">Perfect if you want quick, expert guidance.</p>
+                </div>
+
+                <!-- Pricing Card: Premium -->
+                <div class="flex-1 max-w-md w-full mx-auto p-8 rounded-xl shadow-2xl border-2 border-[#0A1933] relative overflow-hidden bg-white hover:shadow-3xl transition duration-500">
+                    <!-- Symmetrical Vertical Outline (Navy Blue) -->
+                    <div class="absolute top-0 bottom-0 left-0 w-1 primary-navy"></div>
+                    <div class="absolute top-0 bottom-0 right-0 w-1 primary-navy"></div>
+
+                    <div class="text-center pb-8 border-b border-navy/20 mb-6">
+                        <h3 class="text-4xl font-display font-bold text-navy mb-2">Premium Advisor+</h3>
+                        <p class="text-5xl font-display font-bold primary-navy text-white inline-block px-4 py-2 rounded-lg">£49.99</p>
+                    </div>
+
+                    <p class="text-center text-gray-600 mb-6 font-semibold font-functional">
+                        Receive your tailored shortlist within <span class="text-navy font-bold">1–2 working days</span>, plus ongoing support.
+                    </p>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">All features of the Standard tier.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">Tailored shortlist of <span class="font-bold">5 car models</span> (Priority Processing).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">Ongoing email/text support for <span class="font-bold">3 days</span> after delivery.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-navy mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-800">Optional phone or text support to discuss needs in detail.</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mt-8 block primary-navy text-white text-center py-3 rounded-lg font-semibold border-2 border-transparent transition duration-300 hover:bg-white hover:text-navy hover:border-navy">
+                        Select Premium
+                    </a>
+                    <p class="text-xs text-center text-gray-500 mt-4">Ideal for personal advice and complete peace of mind.</p>
+                </div>
+
+            </div>
+            <div class="text-center mt-8 text-sm text-gray-500">
+                <p>Optional Add-on: Extra car on shortlist: £7.99</p>
+            </div>
+        </section>
+
+        <!-- 4. Disclaimer/Assymetric Block (Navy Block, White Text) -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 primary-navy relative overflow-hidden rounded-t-2xl">
+             <!-- Asymmetrical Navy Block/Sharp Geometric Edge Effect -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-[#0A1933] to-[#0A1933]/90"></div>
+            <div class="relative max-w-4xl mx-auto text-white">
+                <h3 class="text-4xl font-display font-bold mb-4">A Note on Our Service</h3>
+                <p class="text-lg font-light mb-6">
+                    AutoAdvisor provides <span class="font-semibold">advice and consultation only</span>. We do not sell vehicles and are not responsible for the condition, price, or availability of any car.
+                    <br><br>
+                    All purchase decisions are the customer's responsibility. We strongly advise that you carry out your own checks (vehicle history, inspections, test drives, etc.) before buying any vehicle.
+                </p>
+                <a href="#" class="text-sm font-medium underline opacity-80 hover:opacity-100 transition duration-300">Read Full Terms & Conditions</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Signature Grouping - Formal Display Type) -->
+    <footer class="bg-white border-t border-navy/20 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-navy">
+            <!-- Signature Grouping -->
+            <div class="text-xl font-display font-bold tracking-wider mb-4 md:mb-0">CMA AutoAdvisor</div>
+            <!-- Functional Links -->
+            <div class="flex space-x-6 text-sm font-light">
+                <a href="#" class="hover:underline">Privacy Policy (GDPR Compliant)</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+            <p class="text-xs font-light mt-4 md:mt-0 opacity-70">© 2025 AutoAdvisor. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
